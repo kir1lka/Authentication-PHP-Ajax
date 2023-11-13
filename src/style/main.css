@@ -1,0 +1,88 @@
+body {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+/* label */
+label {
+  margin-bottom: 10px;
+}
+
+/* link-login */
+.link-login {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* a */
+a {
+  color: #64f6d3;
+}
+
+/* input */
+input {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #64f6d3;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+/* form */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+/* buttonOpen */
+.buttonOpen {
+  background: #64f6d3;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.buttonOpen:hover {
+  background: rgb(0, 194, 148);
+}
+
+.buttonOpen:active {
+  transform: translateY(2px);
+}
+
+/* message */
+
+.message {
+  text-align: center;
+  color: green;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px solid green;
+}
+
+.messageError {
+  text-align: center;
+  color: red;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px solid red;
+}
