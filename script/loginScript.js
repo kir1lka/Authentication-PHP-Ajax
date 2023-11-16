@@ -1,7 +1,5 @@
 const messageEl = document.getElementById("message");
-// const messageRegistEl = document.getElementById("messageRegist");
 const BtnLogin = document.getElementById("btn-login");
-// const BtnRegist = document.getElementById("btn-regist");
 
 //function ajax
 function makeAjaxRequest(url, method, data) {
