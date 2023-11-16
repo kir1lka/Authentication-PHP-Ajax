@@ -14,31 +14,30 @@ if (isset($_SESSION["user"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./src/style/reset.css">
-    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+
+    <script src="./script/loginScript.js" defer></script>
 
     <title>Авторизация</title>
 </head>
 
 <body>
-    <form action="./vendor/signIn.php" method="post" class="form">
+    <form class="form">
         <label>Логин</label>
-        <input type="text" name="login" placeholder="Введите свой логин">
+        <input type="text" name="login" class="" placeholder="Введите свой логин">
         <label>Пароль</label>
-        <input type="password" name="password" placeholder="Введите свой пароль">
-        <button class="buttonOpen" type="submit">Войти</button>
+        <input type="password" name="password" class="" placeholder="Введите свой пароль">
+
+        <!-- submit -->
+        <button id="btn-login" class="buttonOpen">Войти</button>
+
+        <!-- under link -->
         <p class="link-login">Нет акканута? <a href="./regist.php">Зарегистрироваться</a></p>
 
-        <!-- message error -->
-        <?php
-        if (isset($_SESSION['messageError'])) {
-            echo '<p class="messageError">' . $_SESSION['messageError'] . '</p>';
-            unset($_SESSION['messageError']);
-        } else if (isset($_SESSION['message'])) {
-            echo '<p class="message">' . $_SESSION['message'] . '</p>';
-            unset($_SESSION['message']);
-        }
-        ?>
+        <!-- messageError message -->
+        <p id="message" class="messageError"></p>
     </form>
+
 </body>
 
 </html>
