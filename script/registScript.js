@@ -1,7 +1,7 @@
 const BtnRegist = document.getElementById("btn-regist");
 const messageEl = document.getElementById("message");
 
-// function to make AJAX request
+//function ajax
 function makeAjaxRequest(url, method, data) {
   let formData = new FormData();
 
